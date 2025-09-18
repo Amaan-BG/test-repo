@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaLoot — Instant game goodies. Fast, safe, and easy.</title>
+  <meta name="description" content="NovaLoot is the modern storefront for instant game goodies. Discover curated guides, boosters, and exclusive items with a sleek experience.">
+  <meta property="og:title" content="NovaLoot — Instant game goodies.">
+  <meta property="og:description" content="Level up in minutes with NovaLoot's curated digital items and tutorials.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://novaloot.example.com/">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="navbar" aria-label="Main">
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-drawer">
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+      </button>
+      <a class="logo" href="#top" aria-label="NovaLoot home">
+        <span class="logo__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+            <text x="16" y="23" font-size="22" text-anchor="middle">★</text>
+          </svg>
+        </span>
+        <span class="logo__text">NovaLoot</span>
+      </a>
+      <div class="trust-pill" aria-hidden="true">⭐ 4.7 / 5 (3,200+ ratings)</div>
+      <div class="nav-links" role="navigation" aria-label="Primary">
+        <a href="#games">Store</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#best-sellers">Best sellers</a>
+        <a href="#reviews">Reviews</a>
+      </div>
+      <div class="nav-actions">
+        <button class="toggle-theme btn btn--ghost" type="button" aria-pressed="true">Dark mode</button>
+        <button class="cart-trigger btn btn--accent" type="button" aria-expanded="false" aria-controls="mini-cart">
+          <span>Cart</span>
+          <span class="cart-count-group" aria-live="polite">
+            (<span class="cart-count">0</span>)
+          </span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <aside class="mobile-drawer" id="mobile-drawer" aria-hidden="true" tabindex="-1">
+    <button class="mobile-drawer__close" type="button" aria-label="Close navigation">×</button>
+    <ul>
+      <li><a href="#games">Store</a></li>
+      <li><a href="#how-it-works">How it works</a></li>
+      <li><a href="#best-sellers">Best sellers</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+    </ul>
+  </aside>
+  <div class="drawer-overlay" data-overlay="nav" hidden></div>
+
+  <main id="main-content">
+    <section class="hero" id="hero">
+      <div class="hero__background" aria-hidden="true">
+        <div class="sparkle sparkle--one"></div>
+        <div class="sparkle sparkle--two"></div>
+        <div class="sparkle sparkle--three"></div>
+      </div>
+      <div class="hero__content">
+        <p class="tagline">Instant game goodies. Fast, safe, and easy.</p>
+        <h1>Level up in minutes.</h1>
+        <p class="hero__subtext">Hand-picked items and guides for your favorite games.</p>
+        <div class="hero__actions">
+          <button class="btn btn--primary" data-scroll-target="#best-sellers" type="button">Start shopping</button>
+          <button class="btn btn--ghost" data-scroll-target="#how-it-works" type="button">How it works</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="how" id="how-it-works" aria-labelledby="how-title">
+      <div class="section-heading">
+        <h2 id="how-title">How it works</h2>
+        <p>Get geared up in three swift steps.</p>
+      </div>
+      <div class="how__grid">
+        <article class="how-card tilt-card" data-observe>
+          <div class="how-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" fill="var(--accent)" opacity="0.2"/>
+              <path d="M16 32l7-16 9 10-6 2-4 6z" fill="var(--accent)"/>
+            </svg>
+          </div>
+          <h3>Choose a game</h3>
+          <p>Pick from our curated list.</p>
+        </article>
+        <article class="how-card tilt-card" data-observe>
+          <div class="how-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" fill="var(--accent)" opacity="0.2"/>
+              <path d="M16 18h16v4H16zm0 8h12v4H16zm0 8h8v4h-8z" fill="var(--accent)"/>
+            </svg>
+          </div>
+          <h3>Follow the guide</h3>
+          <p>Quick steps, no fluff.</p>
+        </article>
+        <article class="how-card tilt-card" data-observe>
+          <div class="how-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" fill="var(--accent)" opacity="0.2"/>
+              <path d="M16 26l6 6 12-16" stroke="var(--accent)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </div>
+          <h3>Get it fast</h3>
+          <p>Instant instructions after checkout.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="games" id="games" aria-labelledby="games-title">
+      <div class="section-heading">
+        <h2 id="games-title">Trending games</h2>
+        <p>Guides and loot tailored for every playstyle.</p>
+      </div>
+      <div class="games__grid">
+        <article class="game-card tilt-card">
+          <img src="assets/mystery-blade-arena.svg" alt="Mystery Blade Arena cover" loading="lazy" decoding="async">
+          <div class="game-card__body">
+            <h3>Mystery Blade Arena</h3>
+            <p>Skins &amp; emotes</p>
+            <p class="game-card__excerpt">Channel your inner duelist with shimmering blades and expressive taunts.</p>
+            <button class="btn btn--ghost view-tutorial" data-game="Mystery Blade Arena" type="button">View tutorial</button>
+          </div>
+        </article>
+        <article class="game-card tilt-card">
+          <img src="assets/tower-defense-titans.svg" alt="Tower Defense Titans cover" loading="lazy" decoding="async">
+          <div class="game-card__body">
+            <h3>Tower Defense Titans</h3>
+            <p>Boosters &amp; passes</p>
+            <p class="game-card__excerpt">Hold the line with tactical upgrades and team-boosting passes.</p>
+            <button class="btn btn--ghost view-tutorial" data-game="Tower Defense Titans" type="button">View tutorial</button>
+          </div>
+        </article>
+        <article class="game-card tilt-card">
+          <img src="assets/anime-heroes-x.svg" alt="Anime Heroes X cover" loading="lazy" decoding="async">
+          <div class="game-card__body">
+            <h3>Anime Heroes X</h3>
+            <p>Abilities &amp; auras</p>
+            <p class="game-card__excerpt">Unlock cinematic abilities and radiant aura trails.</p>
+            <button class="btn btn--ghost view-tutorial" data-game="Anime Heroes X" type="button">View tutorial</button>
+          </div>
+        </article>
+        <article class="game-card tilt-card">
+          <img src="assets/pet-quest-simulator.svg" alt="Pet Quest Simulator cover" loading="lazy" decoding="async">
+          <div class="game-card__body">
+            <h3>Pet Quest Simulator</h3>
+            <p>Pets &amp; charms</p>
+            <p class="game-card__excerpt">Grow your companion squad with rare charms and cuddly buffs.</p>
+            <button class="btn btn--ghost view-tutorial" data-game="Pet Quest Simulator" type="button">View tutorial</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="best-sellers" id="best-sellers" aria-labelledby="best-sellers-title">
+      <div class="section-heading">
+        <h2 id="best-sellers-title">Best sellers</h2>
+        <p>Fan-favorite gear, refreshed hourly.</p>
+      </div>
+      <div class="products">
+        <article class="product-card tilt-card" data-product-id="nebula-katana">
+          <div class="product-card__media">
+            <img src="assets/nebula-katana.svg" alt="Nebula Katana" loading="lazy" decoding="async">
+            <span class="product-card__badge" aria-hidden="true">-50%</span>
+            <span class="product-card__tag">Melee</span>
+          </div>
+          <div class="product-card__body">
+            <h3>Nebula Katana</h3>
+            <p class="product-card__copy">Slice through any arena with dazzling nebula trails.</p>
+            <div class="product-card__pricing">
+              <span class="price">$29.99</span>
+              <span class="price price--old">$59.99</span>
+            </div>
+            <button class="btn btn--primary add-to-cart" data-product='{"id":"nebula-katana","name":"Nebula Katana","price":29.99}' type="button">Add to Cart</button>
+          </div>
+        </article>
+        <article class="product-card tilt-card" data-product-id="solar-scythe">
+          <div class="product-card__media">
+            <img src="assets/solar-scythe.svg" alt="Solar Scythe" loading="lazy" decoding="async">
+            <span class="product-card__badge" aria-hidden="true">-56%</span>
+            <span class="product-card__tag">Mythic</span>
+          </div>
+          <div class="product-card__body">
+            <h3>Solar Scythe</h3>
+            <p class="product-card__copy">Harness starfire arcs with this mythic harvest weapon.</p>
+            <div class="product-card__pricing">
+              <span class="price">$21.99</span>
+              <span class="price price--old">$49.99</span>
+            </div>
+            <button class="btn btn--primary add-to-cart" data-product='{"id":"solar-scythe","name":"Solar Scythe","price":21.99}' type="button">Add to Cart</button>
+          </div>
+        </article>
+        <article class="product-card tilt-card" data-product-id="frostwing-dagger">
+          <div class="product-card__media">
+            <img src="assets/frostwing-dagger.svg" alt="Frostwing Dagger" loading="lazy" decoding="async">
+            <span class="product-card__badge" aria-hidden="true">-50%</span>
+            <span class="product-card__tag">Rare</span>
+          </div>
+          <div class="product-card__body">
+            <h3>Frostwing Dagger</h3>
+            <p class="product-card__copy">Freeze foes in style with crystalline frost effects.</p>
+            <div class="product-card__pricing">
+              <span class="price">$9.99</span>
+              <span class="price price--old">$19.99</span>
+            </div>
+            <button class="btn btn--primary add-to-cart" data-product='{"id":"frostwing-dagger","name":"Frostwing Dagger","price":9.99}' type="button">Add to Cart</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="features" aria-labelledby="features-title">
+      <div class="section-heading">
+        <h2 id="features-title">Why choose us</h2>
+      </div>
+      <div class="feature-pills">
+        <div class="feature-pill tilt-card">
+          <span class="feature-pill__icon" aria-hidden="true">⚡</span>
+          <span>Fast delivery</span>
+        </div>
+        <div class="feature-pill tilt-card">
+          <span class="feature-pill__icon" aria-hidden="true">🔐</span>
+          <span>Secure checkout</span>
+        </div>
+        <div class="feature-pill tilt-card">
+          <span class="feature-pill__icon" aria-hidden="true">💬</span>
+          <span>24/7 chat</span>
+        </div>
+        <div class="feature-pill tilt-card">
+          <span class="feature-pill__icon" aria-hidden="true">🎮</span>
+          <span>Wide variety</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" id="reviews" aria-labelledby="reviews-title" aria-live="polite">
+      <div class="section-heading">
+        <h2 id="reviews-title">Player testimonials</h2>
+        <p>Real stories from NovaLoot shoppers worldwide.</p>
+      </div>
+      <div class="carousel" data-carousel>
+        <button class="carousel__control prev" type="button" aria-label="Previous testimonial">❮</button>
+        <div class="carousel__viewport" tabindex="0">
+          <div class="carousel__track">
+            <article class="testimonial" data-index="0">
+              <div class="testimonial__avatar" aria-hidden="true">AL</div>
+              <div class="testimonial__meta">
+                <h3>Aria L. <span role="img" aria-label="United States flag">🇺🇸</span></h3>
+                <div class="testimonial__rating" aria-hidden="true">★★★★★</div>
+              </div>
+              <p>“I snagged the Nebula Katana and was in ranked matches within minutes. Flawless experience!”</p>
+            </article>
+            <article class="testimonial" data-index="1">
+              <div class="testimonial__avatar" aria-hidden="true">KT</div>
+              <div class="testimonial__meta">
+                <h3>Kaito T. <span role="img" aria-label="Japan flag">🇯🇵</span></h3>
+                <div class="testimonial__rating" aria-hidden="true">★★★★★</div>
+              </div>
+              <p>“The guides are concise and effective. My squad keeps asking how I level so fast.”</p>
+            </article>
+            <article class="testimonial" data-index="2">
+              <div class="testimonial__avatar" aria-hidden="true">MB</div>
+              <div class="testimonial__meta">
+                <h3>Mina B. <span role="img" aria-label="Brazil flag">🇧🇷</span></h3>
+                <div class="testimonial__rating" aria-hidden="true">★★★★☆</div>
+              </div>
+              <p>“Customer support on chat helped me redeem codes instantly. Totally recommend.”</p>
+            </article>
+            <article class="testimonial" data-index="3">
+              <div class="testimonial__avatar" aria-hidden="true">ES</div>
+              <div class="testimonial__meta">
+                <h3>Elliot S. <span role="img" aria-label="United Kingdom flag">🇬🇧</span></h3>
+                <div class="testimonial__rating" aria-hidden="true">★★★★★</div>
+              </div>
+              <p>“NovaLoot is my go-to for seasonal events. The cart saves my favorites between sessions!”</p>
+            </article>
+            <article class="testimonial" data-index="4">
+              <div class="testimonial__avatar" aria-hidden="true">PR</div>
+              <div class="testimonial__meta">
+                <h3>Priya R. <span role="img" aria-label="India flag">🇮🇳</span></h3>
+                <div class="testimonial__rating" aria-hidden="true">★★★★★</div>
+              </div>
+              <p>“Beautiful interface and the promo deals are hard to beat. Love the new dark mode!”</p>
+            </article>
+          </div>
+        </div>
+        <button class="carousel__control next" type="button" aria-label="Next testimonial">❯</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-labelledby="footer-title">
+    <div class="footer__top">
+      <div>
+        <h2 id="footer-title">NovaLoot</h2>
+        <p class="footer__tagline">Instant game goodies. Fast, safe, and easy.</p>
+      </div>
+      <div class="footer__selectors">
+        <label>
+          <span class="sr-only">Select language</span>
+          <select>
+            <option>English (US)</option>
+            <option>日本語</option>
+            <option>Português</option>
+          </select>
+        </label>
+        <label>
+          <span class="sr-only">Select currency</span>
+          <select>
+            <option>USD ($)</option>
+            <option>JPY (¥)</option>
+            <option>BRL (R$)</option>
+          </select>
+        </label>
+      </div>
+    </div>
+    <div class="footer__links">
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#hero">About</a></li>
+          <li><a href="#features-title">Our promise</a></li>
+          <li><a href="#reviews">Community</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#how-it-works">Guides</a></li>
+          <li><a href="#best-sellers">Order status</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__disclaimer">NovaLoot is not affiliated with Roblox or any game developers.</p>
+  </footer>
+
+  <aside class="mini-cart" id="mini-cart" aria-hidden="true" tabindex="-1">
+    <div class="mini-cart__header">
+      <h2>Mini cart</h2>
+      <button class="mini-cart__close" type="button" aria-label="Close cart">×</button>
+    </div>
+    <div class="mini-cart__body">
+      <ul class="mini-cart__list" aria-live="polite"></ul>
+      <p class="mini-cart__empty">Your cart is empty.</p>
+    </div>
+    <div class="mini-cart__footer">
+      <div class="mini-cart__total">
+        <span>Total</span>
+        <strong class="mini-cart__sum">$0.00</strong>
+      </div>
+      <button class="btn btn--accent" type="button">Checkout (demo)</button>
+    </div>
+  </aside>
+  <div class="drawer-overlay" data-overlay="cart" hidden></div>
+
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="tutorial-title" hidden>
+    <div class="modal__content" role="document">
+      <button class="modal__close" type="button" aria-label="Close tutorial">×</button>
+      <h2 id="tutorial-title">Tutorial</h2>
+      <p class="modal__subtitle">Follow these steps to redeem your reward.</p>
+      <ol class="modal__steps">
+        <li>Open the game.</li>
+        <li>Go to Inventory → Codes.</li>
+        <li>Redeem the code and restart the match.</li>
+      </ol>
+      <button class="btn btn--primary modal__action" type="button">Got it!</button>
+    </div>
+  </div>
+  <div class="drawer-overlay" data-overlay="modal" hidden></div>
+
+  <div class="promo-ribbon" role="status" aria-live="polite" hidden>
+    <span>Use code <strong>NOVA20</strong> for 20% off today.</span>
+    <button class="promo-ribbon__dismiss" type="button" aria-label="Dismiss promo">×</button>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
